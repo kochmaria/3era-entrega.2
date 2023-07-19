@@ -1,0 +1,125 @@
+/* Estilos del encabezado */
+.header {
+    background-image: url(.//img/elegir-cascos.webp);
+    background-size: cover;
+    padding: 50px 0;
+  }
+  
+  .header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #919090;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
+    animation: blurEffect 2.3s infinite alternate; 
+  }
+  
+  /* AnimaciÃ³n de difuminaciÃ³n */
+  @keyframes blurEffect {
+    0% {
+      filter: blur(0);
+    }
+    25%{filter: brightness(10px);}
+    50% {
+      filter: blur(5px);
+    }
+    100% {filter: brightness(100px);}
+  }
+  h2{
+    color: #030303;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    animation: blurEffect 3s  infinite alternate; 
+  
+  }
+  /* AnimaciÃ³n de difuminaciÃ³n */
+  @keyframes blurEffect {
+    0% {
+      filter: blur(100px);
+    }
+    100% {
+      filter: blur(0px);
+    }
+  }
+  
+  
+  
+  body {
+    background-color: #caced2;
+    color: #212529;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #5f5c5c;
+  }
+  h3 {
+    font-size: 0.1rem;
+  }
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  /* Estilos de la tarjeta de producto */
+  .card {
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* Estilos del botÃ³n */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Estilos de la cuadrÃ­cula de imÃ¡genes */
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }

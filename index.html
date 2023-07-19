@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tienda de Auriculares</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="text-center mb-0">Tienda de Auriculares</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-lg-8">
+        <div id="product-container" class="row"></div>
+      </div>
+      <div class="col-lg-4">
+        <div id="cart-container">
+          <h2>Carrito de Compras</h2>
+          <div id="cart-items"></div>
+          <div class="text-right">
+            <p><i class="fas fa-dollar-sign"></i> <span id="precio-total">0.00</span></p>
+          </div>
+          <button id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
